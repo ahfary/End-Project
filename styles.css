@@ -1,0 +1,369 @@
+:root {
+    /* sosmed */
+    --instagram: #d71c1c;
+    --discord: #5158dd;
+    --tiktok: #000000;
+    /* background */
+    --chateau-green: #3f9469;
+    --osean-green: #48a878;
+    --chinook: #99ca9c;
+    --desert-sand: #eeccac;
+    --white: #ffffff;
+    --black: #000000;
+    --section: #3a7b5a;
+    --navbar: #34604a;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--chateau-green);
+    width: 100%;
+}
+
+header {
+    height: 90vh;
+    background-color: var(--navbar);
+    color: var(--desert-sand);
+}
+
+.name {
+    color: var(--desert-sand);
+}
+
+#navbar {
+    position:sticky;
+    top: 0;
+    background-color: var(--navbar);
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: var(--desert-sand);
+}
+
+#navbar>nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#navbar>nav>a {
+    text-decoration: none;
+    padding: 10px;
+    transition: all .3s ease;
+    border-radius: 25px;
+    color: var(--desert-sand);
+    font-weight: bold;
+    font-size: 12px;
+    cursor: default;
+}
+
+#navbar>nav>a:hover {
+    color: var(--navbar);
+    background-color: var(--chinook);
+    transform: scale(1.1);
+}
+
+#home-text {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.deskripsi {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    width: 130px;
+    background-color: var(--bg1);
+    color: var(--bg3);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+section {
+    height: 100vh;
+}
+
+.div1 {
+    height: 100vh;
+    background-color: var(--section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div1>h1 {
+    margin-top: 150px;
+}
+
+#card {
+    margin-top: -50px;
+    display: flex;
+    gap: 15px;
+}
+
+.profile-card {
+    height: 250px;
+    width: 250px;
+    border: 5px solid var(--navbar);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.text-cita {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.card{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    right: -250px;
+    transition: all .5s ease;
+}
+.profile-card:hover .card {
+    right: 0px;
+}
+.card:hover .layers {
+    bottom: 110px;
+}
+
+.card>img {
+    max-height: 250px;
+    transition: .4s;
+}
+.layers {
+    position: relative;
+    z-index: 2;
+    background: #4f4f4f4f;
+    backdrop-filter: blur(2px);
+    height: 100px;
+    width: 230px;
+    font-size: 12px;
+    color: var(--desert-sand);
+    transition: all .5s ease;
+    bottom: 0px;
+    padding: 10px;
+    text-align: justify;
+    transition-delay: .3s;
+}
+.layers:nth-child(2) {
+    backdrop-filter: blur(8px);
+}
+
+td {
+    border: 1px solid var(--bg2);
+    padding: 5px;
+}
+
+table {
+    background-color: var(--chateau-green);
+    color: var(--desert-sand);
+    border: 2px solid var(--section);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    height: 250px;
+    transform: translate(0, 20px);
+}
+
+.title {
+    height: 100vh;
+    color: var(--white-smoke);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    color: var(--bg1);
+    gap: 30px;
+}
+
+.box {
+    margin-top: 10px;
+    background-color: var(--white-smoke);
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.div2 {
+    background-color: var(--chateau-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.boxx {
+    height: 150px;
+    width: 300px;
+    font-size: 14px;
+    background-color: var(--chinook);
+    padding: 15px;
+}
+
+#sosmed {
+    background-color: #00c988;
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+.form {
+    display: flex;
+    gap: 30px;
+}
+
+.input>input {
+    padding: 10px;
+    border: 1px solid var(--white-smoke);
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-inline: 2px;
+    transition: all .3s ease;
+}
+
+.input>input:hover {
+    transform: scale(.96);
+}
+
+textarea {
+    padding: 10px;
+    width: 350px;
+    height: 100px;
+    border: 1px solid var(--white-smoke);
+    border-radius: 0px 20px 0px 20px;
+    transition: all 0.3s ease;
+}
+
+textarea:hover {
+    transform: scale(.98);
+}
+
+.profile {
+    height: 80px;
+    width: 50px;
+    background-color: var(--outrageous-orange);
+}
+
+.deskripsi1 {
+    margin-top: 20px;
+}
+
+.card-medsos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-medsos>a {
+    color: var(--black);
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid var(--white-smoke);
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all .3s ease;
+    color: var(--chinook);
+    background-color: var(--navbar);
+}
+#submit:hover {
+    transform: scale(.95);
+}
+
+.svgfooter {
+    margin-bottom: -5px;
+    margin-top: 10vh;
+}
+
+footer {
+    height: 10vh;
+    background-color: #00c988;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.circle {
+    background-color: var(--chateau-green);
+    height: 35px;
+    width: 35px;
+    border-radius: 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    color: var(--white);
+    text-decoration: none;
+    cursor: default;
+}
+
+.circle:nth-child(1):hover {
+    background-color: var(--instagram);
+    transform: scale(1.2);
+}
+.circle:nth-child(2):hover {
+    background-color: var(--discord);
+    transform: scale(1.2);
+}
+.circle:nth-child(3):hover {
+    background-color: var(--tiktok);
+    transform: scale(1.2);
+}
+
+#copyright {
+    display: flex;
+    align-items: center;
+}
+
+.Ahfary {
+    margin-left: 20em;
+    font-weight: bold;
+}

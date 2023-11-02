@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Documents/Logo/svg"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Gallery"
+	}
+}
